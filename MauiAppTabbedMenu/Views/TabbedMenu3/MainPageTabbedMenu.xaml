@@ -1,0 +1,43 @@
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:MauiAppTabbedMenu.Views.TabbedMenu3"
+            x:Class="MauiAppTabbedMenu.Views.TabbedMenu3.MainPageTabbedMenu">
+
+    <NavigationPage Title="One" IconImageSource="{StaticResource TabOne}">
+        <x:Arguments>
+            <local:Page1 Title="One" />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Two" IconImageSource="{StaticResource TabTwo}">
+        <x:Arguments>
+            <local:Page2 Title="Two" />
+        </x:Arguments>
+    </NavigationPage>
+
+    <!--<TabbedPage.ItemTemplate>
+        <DataTemplate>
+            <ContentPage Title="{Binding Name}"
+                         IconImageSource="airplane1.png">
+                <StackLayout Padding="5, 25">
+                    <Label Text="{Binding Name}"
+                           FontAttributes="Bold"
+                           FontSize="18"
+                           HorizontalOptions="Center" />
+                    <Image Source="{Binding PhotoUrl}"
+                           HorizontalOptions="Center"
+                           WidthRequest="200"
+                           HeightRequest="200" />
+                    <StackLayout Padding="50, 10">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Family: "
+                                   FontAttributes="Bold" />
+                            <Label Text="{Binding Family}" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </ContentPage>
+        </DataTemplate>
+    </TabbedPage.ItemTemplate>-->
+    
+</TabbedPage>
