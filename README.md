@@ -9,6 +9,11 @@
 - Views: components
     - [https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/contentview?view=net-maui-8.0]
 
+~~~mermaid
+flowchart TD
+    Pages --> Layouts
+    Layouts --> Views
+~~~
 
 ### Pages
 
