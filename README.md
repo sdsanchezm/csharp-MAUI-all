@@ -89,6 +89,8 @@ flowchart TD
     </Application.Resources>
     ```
 
+- Example of interfaces
+    - [https://dribbble.com/shots/17575451-AMA-Learning-App-User-Interface]
 
 
 
