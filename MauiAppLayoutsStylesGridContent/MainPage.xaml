@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppStackLayout.MainPage">
+
+    <!--This is explicit Styles, meaning: i nthe same xaml file-->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Label1Style" TargetType="Label">
+                <Setter Property="FontSize" Value="11" />
+                <Setter Property="TextColor" Value="Red" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <StackLayout Orientation="Horizontal">
+                <Button BackgroundColor="Aqua" />
+                <Button BackgroundColor="LightCyan" />
+                <Button BackgroundColor="LightGreen" />
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical">
+                <Button BackgroundColor="Aqua" />
+                <Button BackgroundColor="LightCyan" />
+                <Button BackgroundColor="LightGreen" />
+            </StackLayout>
+
+
+            <Frame BackgroundColor="AliceBlue" CornerRadius="20" Margin="20" HeightRequest="280">
+                <VerticalStackLayout VerticalOptions="Center">
+                    <Frame IsClippedToBounds="True" Padding="0" CornerRadius="10" HeightRequest="120" WidthRequest="120" HorizontalOptions="Start">
+                        <Image Source="face1.png" Aspect="AspectFill" />
+                    </Frame>
+
+                    <Label Text="Jamecho" TextColor="Black" FontAttributes="Bold" FontSize="22" Padding="0,0"></Label>
+                    <Label Text="Puppy" TextColor="Gray" FontAttributes="Italic" FontSize="20" Padding="0,0"></Label>
+                    <Label Text="Greetings" TextColor="SlateGrey" FontSize="18" Padding="0,0"></Label>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame  BackgroundColor="DarkBlue" CornerRadius="10" Margin="20" HeightRequest="280">
+                <AbsoluteLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="face1" AbsoluteLayout.LayoutBounds="1,0,350,300" AbsoluteLayout.LayoutFlags="PositionProportional"></Image>
+                    <Label AbsoluteLayout.LayoutBounds=".10,.18,60,30" AbsoluteLayout.LayoutFlags="XProportional,YProportional" BackgroundColor="DarkCyan" HorizontalTextAlignment="Center" TextColor="White" Text="1234" FontAttributes="Bold" />
+                    <Label AbsoluteLayout.LayoutBounds=".35,.18,60,30" AbsoluteLayout.LayoutFlags="XProportional,YProportional" BackgroundColor="DarkCyan" HorizontalTextAlignment="Center" TextColor="White" Text="1234" FontAttributes="Bold" />
+                    <Label AbsoluteLayout.LayoutBounds=".60,.18,60,30" AbsoluteLayout.LayoutFlags="XProportional,YProportional" BackgroundColor="DarkCyan" HorizontalTextAlignment="Center" TextColor="White" Text="1234" FontAttributes="Bold" />
+                    <Label AbsoluteLayout.LayoutBounds=".85,.18,60,30" AbsoluteLayout.LayoutFlags="XProportional,YProportional" BackgroundColor="DarkCyan" HorizontalTextAlignment="Center" TextColor="White" Text="1234" FontAttributes="Bold" />
+                </AbsoluteLayout>
+            </Frame>
+
+            <Frame HeightRequest="280" Padding="0">
+                <AbsoluteLayout Margin="0">
+                    <BoxView Color="Green" AbsoluteLayout.LayoutBounds="0.5,0.5,100,5" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                    <BoxView Color="Green" AbsoluteLayout.LayoutBounds="0,0,100,5" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                    <BoxView Color="DarkKhaki" AbsoluteLayout.LayoutBounds="20,40,220,5" />
+                    <BoxView Color="Red" AbsoluteLayout.LayoutBounds="20,40,5,200" />
+                    <BoxView Color="Red" AbsoluteLayout.LayoutBounds="0,0,5,100" />
+                    <Label TextColor="Black" Text="x" AbsoluteLayout.LayoutBounds="50,50"></Label>
+                    <Label TextColor="Black" Text="x" AbsoluteLayout.LayoutBounds="100,100"></Label>
+                </AbsoluteLayout>
+            </Frame>
+
+            <Frame HeightRequest="280" Padding="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Row="0" Grid.Column="0" BackgroundColor="DarkCyan" />
+                    <Button Grid.Row="0" Grid.Column="1" BackgroundColor="DarkGray" />
+                    <Button Grid.Row="0" Grid.Column="2" BackgroundColor="LightSeaGreen" />
+                    <Button Grid.Row="1" Grid.Column="0" BackgroundColor="LightGray" />
+                    <Button Grid.Row="1" Grid.Column="1" BackgroundColor="BurlyWood" />
+                    <Button Grid.Row="1" Grid.Column="2" BackgroundColor="LightSteelBlue" />
+                    <Button Grid.Row="2" Grid.Column="0" BackgroundColor="DarkKhaki" />
+                    <Button Grid.Row="2" Grid.Column="1" BackgroundColor="DarkTurquoise" />
+                    <Button Grid.Row="2" Grid.Column="2" BackgroundColor="MediumPurple" />
+                </Grid>
+            </Frame>
+
+            <Frame HeightRequest="280" Padding="0">
+                <Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*,*">
+                    <Button Grid.Row="0" Grid.Column="0" BackgroundColor="Purple" />
+                    <Button Grid.Row="0" Grid.Column="1" BackgroundColor="PaleGoldenrod" />
+                    <Button Grid.Row="0" Grid.Column="2" BackgroundColor="DarkKhaki" />
+                    <Button Grid.Row="1" Grid.Column="0" BackgroundColor="MistyRose" />
+                    <Button Grid.Row="1" Grid.Column="1" BackgroundColor="YellowGreen" />
+                    <Button Grid.Row="1" Grid.Column="2" BackgroundColor="ForestGreen" />
+                    <Button Grid.Row="2" Grid.Column="0" BackgroundColor="DarkGray" />
+                    <Button Grid.Row="2" Grid.Column="1" BackgroundColor="Navy" />
+                    <Button Grid.Row="2" Grid.Column="2" BackgroundColor="SpringGreen" />
+                </Grid>
+            </Frame>
+
+            <Frame Margin="10,10" CornerRadius="10">
+                <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto,Auto">
+                    <Frame Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" CornerRadius="10" BorderColor="Transparent" IsClippedToBounds="True" Padding="0" HasShadow="False" HeightRequest="120" WidthRequest="120" Margin="0,0,20,0">
+                        <Image Source="face1.png" Aspect="AspectFill"/>
+                    </Frame>
+                    <Label Grid.Row="0" Grid.Column="1" Text="Nairo Sanc" FontSize="20" VerticalTextAlignment="Center" TextColor="DarkBlue"/>
+                    <Label Grid.Row="1" Grid.Column="1" Text="The best puppy" FontSize="15" TextColor="#7a7a7a" FontAttributes="Italic"/>
+                    <Frame Grid.Row="2" Grid.Column="1" BackgroundColor="#cccccc" BorderColor="Transparent" HeightRequest="90" Margin="0,10">
+                        <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                            <Label Grid.Row="0" Grid.Column="0" Text="Rate" FontSize="10" TextColor="DarkBlue"/>
+                            <Label Grid.Row="1" Grid.Column="0" Text="42" FontSize="13" FontAttributes="Bold" TextColor="DarkBlue"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="Position" FontSize="10" TextColor="DarkBlue"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="CWY887" FontSize="13" FontAttributes="Bold" TextColor="DarkBlue"/>
+                            <Label Grid.Row="0" Grid.Column="2" Text="Code" FontSize="10" TextColor="DarkBlue"/>
+                            <Label Grid.Row="1" Grid.Column="2" Text="1191" FontSize="13" FontAttributes="Bold" TextColor="DarkBlue"/>
+                        </Grid>
+                    </Frame>
+                    <Button Grid.Row="3" Grid.Column="0" BackgroundColor="White" BorderColor="#d4d9d9" TextColor="DarkBlue" BorderWidth="1" HeightRequest="40" Margin="0,0,-20,0" Text="Chat"/>
+                    <Button Grid.Row="3" Grid.Column="2" BackgroundColor="#5474ff" TextColor="White" HeightRequest="40" Margin="35,0,0,0" Text="Follow" />
+                </Grid>
+            </Frame>
+
+            <Frame HeightRequest="360" Padding="0" CornerRadius="0">
+                <Grid RowDefinitions="*,*,*,*,*,*" ColumnDefinitions="*,*,*" ColumnSpacing="5" RowSpacing="5">
+                    <BoxView Color="AliceBlue" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                    <BoxView Color="DarkKhaki" Grid.Column="2" Grid.Row="0"/>
+                    <BoxView Color="DarkGoldenrod" Grid.Column="2" Grid.Row="1"/>
+                    <BoxView Color="DarkCyan" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
+                    <BoxView Color="LightSteelBlue" Grid.Column="2" Grid.Row="2"/>
+                    <BoxView Color="LightSlateGrey" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"/>
+                    <BoxView Color="DarkOliveGreen" Grid.Column="2" Grid.Row="3"/>
+                    <BoxView Color="IndianRed" Grid.Column="0" Grid.Row="4"/>
+                    <BoxView Color="MediumPurple" Grid.Column="1" Grid.Row="4"/>
+                    <BoxView Color="DarkMagenta" Grid.Column="2" Grid.Row="4"/>
+                    <BoxView Color="LightCoral" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="3"/>
+                </Grid>
+            </Frame>
+
+            <Label Text="Align Items Center"/>
+            <Frame HeightRequest="100" Padding="0">
+                <FlexLayout AlignItems="Center">
+                    <Button BackgroundColor="DarkKhaki" Text="Button"/>
+                    <Button BackgroundColor="DarkGoldenrod" Text="Button" TextColor="LightPink"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="BlueViolet" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="DarkGreen" Text="Button" TextColor="LightCoral"/>
+                </FlexLayout>
+            </Frame>
+
+            <Label Text="Align Items Start"/>
+            <Frame HeightRequest="100" Padding="0">
+                <FlexLayout AlignItems="Start">
+                    <Button BackgroundColor="DarkKhaki" Text="Button"/>
+                    <Button BackgroundColor="DarkGoldenrod" Text="Button" TextColor="LightPink"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="BlueViolet" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="DarkGreen" Text="Button" TextColor="LightCoral"/>
+                </FlexLayout>
+            </Frame>
+
+            <Label Text="Align Items End"/>
+            <Frame HeightRequest="100" Padding="0">
+                <FlexLayout AlignItems="End">
+                    <Button BackgroundColor="DarkKhaki" Text="Button"/>
+                    <Button BackgroundColor="DarkGoldenrod" Text="Button" TextColor="LightPink"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="BlueViolet" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="DarkGreen" Text="Button" TextColor="LightCoral"/>
+                </FlexLayout>
+            </Frame>
+
+            <Label Text="Align Items Stretch"/>
+            <Frame HeightRequest="100" Padding="0">
+                <FlexLayout AlignItems="Stretch">
+                    <Button BackgroundColor="DarkKhaki" Text="Button"/>
+                    <Button BackgroundColor="DarkGoldenrod" Text="Button" TextColor="LightPink"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="BlueViolet" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="DarkGreen" Text="Button" TextColor="LightCoral"/>
+                </FlexLayout>
+            </Frame>
+
+            <Label Text="Wrap NoWrap"/>
+            <Frame HeightRequest="200" Padding="0">
+                <FlexLayout Wrap="NoWrap">
+                    <Button BackgroundColor="DarkKhaki" Text="Button"/>
+                    <Button BackgroundColor="DarkGoldenrod" Text="Button" TextColor="LightPink"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="BlueViolet" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="DarkGreen" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="BlueViolet" Text="Button" TextColor="LightCoral"/>
+                </FlexLayout>
+            </Frame>
+
+            <Label Text="Wrap Wrap"/>
+            <Frame HeightRequest="200" Padding="0">
+                <FlexLayout Wrap="Wrap">
+                    <Button BackgroundColor="DarkKhaki" Text="Button"/>
+                    <Button BackgroundColor="DarkGoldenrod" Text="Button" TextColor="LightPink"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="DarkKhaki" Text="Button"/>
+                    <Button BackgroundColor="BlueViolet" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="DarkGreen" Text="Button" TextColor="LightCoral"/>
+                </FlexLayout>
+            </Frame>
+
+            <Label Text="Wrap Reverse"/>
+            <Frame HeightRequest="200" Padding="0">
+                <FlexLayout Wrap="Reverse">
+                    <Button BackgroundColor="DarkKhaki" Text="Button"/>
+                    <Button BackgroundColor="DarkGoldenrod" Text="Button" TextColor="LightPink"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="BlueViolet" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="DarkGreen" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                </FlexLayout>
+            </Frame>
+
+            <Label Text="Direction Column"/>
+            <Frame HeightRequest="200" Padding="0">
+                <FlexLayout Direction="Column">
+                    <Button BackgroundColor="DarkKhaki" Text="Button"/>
+                    <Button BackgroundColor="DarkGoldenrod" Text="Button" TextColor="LightPink"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="BlueViolet" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="DarkGreen" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                </FlexLayout>
+            </Frame>
+
+            <Label Text="Direction ColumnReverse"/>
+            <Frame HeightRequest="200" Padding="0">
+                <FlexLayout Direction="ColumnReverse">
+                    <Button BackgroundColor="DarkKhaki" Text="Button"/>
+                    <Button BackgroundColor="DarkGoldenrod" Text="Button" TextColor="LightPink"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="BlueViolet" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="DarkGreen" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                </FlexLayout>
+            </Frame>
+
+            <Label Text="Direction RowReverse"/>
+            <Frame HeightRequest="200" Padding="0">
+                <FlexLayout Direction="RowReverse">
+                    <Button BackgroundColor="DarkKhaki" Text="Button"/>
+                    <Button BackgroundColor="DarkGoldenrod" Text="Button" TextColor="LightPink"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="BlueViolet" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="DarkGreen" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                </FlexLayout>
+            </Frame>
+
+            <Label Text="Direction Row"/>
+            <Frame HeightRequest="200" Padding="0">
+                <FlexLayout Direction="Row">
+                    <Button BackgroundColor="DarkKhaki" Text="Button"/>
+                    <Button BackgroundColor="DarkGoldenrod" Text="Button" TextColor="LightPink"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="BlueViolet" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="DarkGreen" Text="Button" TextColor="LightCoral"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                </FlexLayout>
+            </Frame>
+
+            <Label Text="JustifyContent SpaceAround"/>
+            <Frame HeightRequest="200" Padding="0">
+                <FlexLayout JustifyContent="SpaceAround">
+                    <Button BackgroundColor="DarkKhaki" Text="Button"/>
+                    <Button BackgroundColor="DarkGoldenrod" Text="Button" TextColor="LightPink"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="BlueViolet" Text="Button" TextColor="LightCoral"/>
+                </FlexLayout>
+            </Frame>
+
+            <Label Text="JustifyContent SpaceBetween"/>
+            <Frame HeightRequest="200" Padding="0">
+                <FlexLayout JustifyContent="SpaceBetween">
+                    <Button BackgroundColor="DarkKhaki" Text="Button"/>
+                    <Button BackgroundColor="DarkGoldenrod" Text="Button" TextColor="LightPink"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="BlueViolet" Text="Button" TextColor="LightCoral"/>
+                </FlexLayout>
+            </Frame>
+
+            <Label Text="JustifyContent SpaceEvenly"/>
+            <Frame HeightRequest="200" Padding="0">
+                <FlexLayout JustifyContent="SpaceEvenly">
+                    <Button BackgroundColor="DarkKhaki" Text="Button"/>
+                    <Button BackgroundColor="DarkGoldenrod" Text="Button" TextColor="LightPink"/>
+                    <Button BackgroundColor="GreenYellow" Text="Button"/>
+                    <Button BackgroundColor="BlueViolet" Text="Button" TextColor="LightCoral"/>
+                </FlexLayout>
+            </Frame>
+
+            <Frame HeightRequest="340" Padding="0" BackgroundColor="LightCyan">
+                <FlexLayout Direction="Column">
+                    <Label Text="select pic" HorizontalTextAlignment="Center" TextColor="Black" FontSize="20" Margin="0" Padding="0"/>
+                    <Frame CornerRadius="20" Margin="10,10">
+                        <FlexLayout Direction="Column" AlignItems="Center">
+                            <Label Text="Chicken" HorizontalTextAlignment="Center" TextColor="DarkGreen"/>
+                            <Image Source="face1" Aspect="AspectFill" HeightRequest="80"/>
+                            <Image Source="face1" Aspect="AspectFill" HeightRequest="50"/>
+                            <Label Text="$10" FontAttributes="Bold" FontSize="30" TextColor="DarkGoldenrod"/>
+                        </FlexLayout>
+                    </Frame>
+                </FlexLayout>
+            </Frame>
+
+            <Frame HeightRequest="600">
+                <Grid RowDefinitions="*,Auto,Auto">
+                    <!-- Job Description-->
+                    <VerticalStackLayout Grid.Row="0" Spacing="10" Padding="20" VerticalOptions="Center">
+                        <Image Source="face1" HeightRequest="60" WidthRequest="60"/>
+                        <Label Text="Product Designer" FontSize="20" HorizontalTextAlignment="Center" />
+                        <Label Text="the company, Inc." TextColor="#6b747d" FontSize="18" HorizontalTextAlignment="Center"/>
+                        <Label Text="Job Description" FontSize="19" Padding="0,20,0,0"/>
+                        <Label TextColor="#7d848b" FontSize="16" LineBreakMode="WordWrap" Text="our product designs."/>
+                        <Label Text="Responsabilities" FontSize="19" Padding="0,20,0,0"/>
+                        <Label TextColor="#7d848b" FontSize="16" LineBreakMode="WordWrap" Text="easy to use."/>
+                    </VerticalStackLayout>
+                    <!-- 5. Earn Badge-->
+                    <Frame Grid.Row="1" BackgroundColor="DarkCyan" CornerRadius="30" HasShadow="False" HeightRequest="100" BorderColor="Transparent">
+                        <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,Auto" VerticalOptions="CenterAndExpand" Padding="15,0" RowSpacing="10" Margin="0,20">
+                            <Label Grid.Row="0" Grid.Column="0" Text="Earn Skill Badge" FontSize="18"/>
+                            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="Skills assesments help you to stand&#10;Our to recluters." FontSize="15"/>
+                            <Button Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" BackgroundColor="White" CornerRadius="10" ImageSource="arrow" WidthRequest="45" HeightRequest="45" VerticalOptions="End"/>
+                        </Grid>
+                    </Frame>
+                    <!-- 5. Similar Job-->
+                    <Frame Grid.Row="2" BackgroundColor="Black" CornerRadius="30" HasShadow="False" HeightRequest="100" BorderColor="Transparent" Margin="0,20,0,15">
+                        <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,Auto" VerticalOptions="CenterAndExpand" Padding="15,0" RowSpacing="10">
+                            <Label Grid.Row="0" Grid.Column="0" Text="Similiar JOb Alert" TextColor="LightBlue" FontSize="18"/>
+                            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" TextColor="White" Text="Product designer, Typography, Google LLC." FontSize="15"/>
+                            <Switch Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" BackgroundColor="Transparent" ThumbColor="Black" VerticalOptions="Start"/>
+                        </Grid>
+                    </Frame>
+                </Grid>
+            </Frame>
+
+            <Frame>
+                <Grid RowDefinitions="Auto,Auto,*" RowSpacing="15">
+                    <Image Grid.Row="0" Source="face1" Aspect="AspectFit" HeightRequest="360"/>
+
+                    <Frame Grid.Row="1" CornerRadius="20" BackgroundColor="LightBlue" HasShadow="False" BorderColor="Transparent">
+                        <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="*,*,*" RowSpacing="20" Padding="20">
+                            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Jamecho&#10;Pet Senior" FontSize="23" FontAttributes="Bold"/>
+                            <Label Grid.Row="1" Grid.Column="0" Text=" Status ✔" TextColor="Gray"/>
+                            <Label Grid.Row="2" Grid.Column="0" Text="Rate" FontAttributes="Bold" Padding="0,20,0,0" HorizontalTextAlignment="Center"/>
+                            <Label Grid.Row="2" Grid.Column="1" Text="Visits" FontAttributes="Bold" Padding="0,20,0,0" HorizontalTextAlignment="Center"/>
+                            <Label Grid.Row="2" Grid.Column="2" Text="Likes" FontAttributes="Bold" Padding="0,20,0,0" HorizontalTextAlignment="Center"/>
+                            <Label Grid.Row="3" Grid.Column="0" Text="21" FontSize="19" HorizontalTextAlignment="Center"/>
+                            <Label Grid.Row="3" Grid.Column="1" Text="42" FontSize="19" HorizontalTextAlignment="Center"/>
+                            <Label Grid.Row="3" Grid.Column="2" Text="63" FontSize="19" HorizontalTextAlignment="Center"/>
+                        </Grid>
+                    </Frame>
+                    <Frame Grid.Row="2" BackgroundColor="#fdecd2" CornerRadius="20" BorderColor="Transparent" HeightRequest="150" VerticalOptions="Center" Margin="0,-50">
+                        <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,Auto" Padding="15" RowSpacing="10" VerticalOptions="Center" HorizontalOptions="Center">
+                            <Label Grid.Row="0" Grid.Column="0" Text="Complete Profile" Style="{StaticResource Label1Style}"/>
+                            <Label Grid.Row="1" Grid.Column="0" Text="    * Likes | Years Active | Certified" FontSize="15" Style="{StaticResource Label1Style}"/>
+                            <Button Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" BackgroundColor="DarkMagenta" ImageSource="arrow" Margin="10,0,0,0" HeightRequest="45" WidthRequest="45" VerticalOptions="Start" Text="view"/>
+                        </Grid>
+                    </Frame>
+                </Grid>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
