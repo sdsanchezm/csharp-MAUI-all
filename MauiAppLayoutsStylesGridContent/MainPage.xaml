@@ -108,22 +108,66 @@
             <Frame Margin="10,10" CornerRadius="10">
                 <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto,Auto">
                     <Frame Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" CornerRadius="10" BorderColor="Transparent" IsClippedToBounds="True" Padding="0" HasShadow="False" HeightRequest="120" WidthRequest="120" Margin="0,0,20,0">
-                        <Image Source="face1.png" Aspect="AspectFill"/>
+                        <Image Source="product3.png" Aspect="AspectFill"/>
                     </Frame>
-                    <Label Grid.Row="0" Grid.Column="1" Text="Nairo Sanc" FontSize="20" VerticalTextAlignment="Center" TextColor="DarkBlue"/>
-                    <Label Grid.Row="1" Grid.Column="1" Text="The best puppy" FontSize="15" TextColor="#7a7a7a" FontAttributes="Italic"/>
+                    <Label Grid.Row="0" Grid.Column="1" Text="Kitchen Stopwatch" FontSize="20" VerticalTextAlignment="Center" TextColor="DarkBlue"/>
+                    <Label Grid.Row="1" Grid.Column="1" Text="Bright numbers" FontSize="15" TextColor="#7a7a7a" FontAttributes="Italic"/>
                     <Frame Grid.Row="2" Grid.Column="1" BackgroundColor="#cccccc" BorderColor="Transparent" HeightRequest="90" Margin="0,10">
                         <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
-                            <Label Grid.Row="0" Grid.Column="0" Text="Rate" FontSize="10" TextColor="DarkBlue"/>
+                            <Label Grid.Row="0" Grid.Column="0" Text="Price" FontSize="10" TextColor="DarkBlue"/>
                             <Label Grid.Row="1" Grid.Column="0" Text="42" FontSize="13" FontAttributes="Bold" TextColor="DarkBlue"/>
-                            <Label Grid.Row="0" Grid.Column="1" Text="Position" FontSize="10" TextColor="DarkBlue"/>
-                            <Label Grid.Row="1" Grid.Column="1" Text="CWY887" FontSize="13" FontAttributes="Bold" TextColor="DarkBlue"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="Coupon" FontSize="10" TextColor="DarkBlue"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="QBY881" FontSize="13" FontAttributes="Bold" TextColor="DarkBlue"/>
                             <Label Grid.Row="0" Grid.Column="2" Text="Code" FontSize="10" TextColor="DarkBlue"/>
-                            <Label Grid.Row="1" Grid.Column="2" Text="1191" FontSize="13" FontAttributes="Bold" TextColor="DarkBlue"/>
+                            <Label Grid.Row="1" Grid.Column="2" Text="1190" FontSize="13" FontAttributes="Bold" TextColor="DarkBlue"/>
                         </Grid>
                     </Frame>
-                    <Button Grid.Row="3" Grid.Column="0" BackgroundColor="White" BorderColor="#d4d9d9" TextColor="DarkBlue" BorderWidth="1" HeightRequest="40" Margin="0,0,-20,0" Text="Chat"/>
-                    <Button Grid.Row="3" Grid.Column="2" BackgroundColor="#5474ff" TextColor="White" HeightRequest="40" Margin="35,0,0,0" Text="Follow" />
+                    <Button Grid.Row="3" Grid.Column="0" BackgroundColor="White" BorderColor="#d4d9d9" TextColor="DarkBlue" BorderWidth="1" HeightRequest="40" Margin="0,0,-20,0" Text="Save Discount"/>
+                    <Button Grid.Row="3" Grid.Column="2" BackgroundColor="#5474ff" TextColor="White" HeightRequest="40" Margin="35,0,0,0" Text="Copy Code" />
+                </Grid>
+            </Frame>
+
+            <Frame Margin="10,10" CornerRadius="10">
+                <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto,Auto">
+                    <Frame Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" CornerRadius="10" BorderColor="Transparent" IsClippedToBounds="True" Padding="0" HasShadow="False" HeightRequest="120" WidthRequest="120" Margin="0,0,20,0">
+                        <Image Source="product2.png" Aspect="AspectFill"/>
+                    </Frame>
+                    <Label Grid.Row="0" Grid.Column="1" Text="Rubik Cube" FontSize="20" VerticalTextAlignment="Center" TextColor="DarkBlue"/>
+                    <Label Grid.Row="1" Grid.Column="1" Text="High Speed, pro, competition" FontSize="15" TextColor="#7a7a7a" FontAttributes="Italic"/>
+                    <Frame Grid.Row="2" Grid.Column="1" BackgroundColor="#cccccc" BorderColor="Transparent" HeightRequest="90" Margin="0,10">
+                        <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                            <Label Grid.Row="0" Grid.Column="0" Text="Price" FontSize="10" TextColor="DarkBlue"/>
+                            <Label Grid.Row="1" Grid.Column="0" Text="42" FontSize="13" FontAttributes="Bold" TextColor="DarkBlue"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="Coupon" FontSize="10" TextColor="DarkBlue"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="CWX884" FontSize="13" FontAttributes="Bold" TextColor="DarkBlue"/>
+                            <Label Grid.Row="0" Grid.Column="2" Text="Code" FontSize="10" TextColor="DarkBlue"/>
+                            <Label Grid.Row="1" Grid.Column="2" Text="1192" FontSize="13" FontAttributes="Bold" TextColor="DarkBlue"/>
+                        </Grid>
+                    </Frame>
+                    <Button Grid.Row="3" Grid.Column="0" BackgroundColor="White" BorderColor="#d4d9d9" TextColor="DarkBlue" BorderWidth="1" HeightRequest="40" Margin="0,0,-20,0" Text="Save Discount"/>
+                    <Button Grid.Row="3" Grid.Column="2" BackgroundColor="#5474ff" TextColor="White" HeightRequest="40" Margin="35,0,0,0" Text="Copy Code" />
+                </Grid>
+            </Frame>
+
+            <Frame Margin="10,10" CornerRadius="10">
+                <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto,Auto">
+                    <Frame Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" CornerRadius="10" BorderColor="Transparent" IsClippedToBounds="True" Padding="0" HasShadow="False" HeightRequest="120" WidthRequest="120" Margin="0,0,20,0">
+                        <Image Source="product1.png" Aspect="AspectFill"/>
+                    </Frame>
+                    <Label Grid.Row="0" Grid.Column="1" Text="Battery recharger" FontSize="20" VerticalTextAlignment="Center" TextColor="DarkBlue"/>
+                    <Label Grid.Row="1" Grid.Column="1" Text="Original Brand" FontSize="15" TextColor="#7a7a7a" FontAttributes="Italic"/>
+                    <Frame Grid.Row="2" Grid.Column="1" BackgroundColor="#cccccc" BorderColor="Transparent" HeightRequest="90" Margin="0,10">
+                        <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                            <Label Grid.Row="0" Grid.Column="0" Text="Price" FontSize="10" TextColor="DarkBlue"/>
+                            <Label Grid.Row="1" Grid.Column="0" Text="42" FontSize="13" FontAttributes="Bold" TextColor="DarkBlue"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="Coupon" FontSize="10" TextColor="DarkBlue"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="WWS881" FontSize="13" FontAttributes="Bold" TextColor="DarkBlue"/>
+                            <Label Grid.Row="0" Grid.Column="2" Text="Code" FontSize="10" TextColor="DarkBlue"/>
+                            <Label Grid.Row="1" Grid.Column="2" Text="1193" FontSize="13" FontAttributes="Bold" TextColor="DarkBlue"/>
+                        </Grid>
+                    </Frame>
+                    <Button Grid.Row="3" Grid.Column="0" BackgroundColor="White" BorderColor="#d4d9d9" TextColor="DarkBlue" BorderWidth="1" HeightRequest="40" Margin="0,0,-20,0" Text="Save Discount"/>
+                    <Button Grid.Row="3" Grid.Column="2" BackgroundColor="#5474ff" TextColor="White" HeightRequest="40" Margin="35,0,0,0" Text="Copy Code" />
                 </Grid>
             </Frame>
 
