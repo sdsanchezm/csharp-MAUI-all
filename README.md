@@ -17,6 +17,10 @@ flowchart TD
 
 ### Pages
 
+### Visual 
+
+[![Alt text](./Assets/front1.jpg)](front1.jpg)
+
 #### ContentPage
 
 - [https://learn.microsoft.com/en-us/dotnet/maui/user-interface/pages/contentpage?view=net-maui-8.0]
